@@ -1,0 +1,921 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Specific Metas
+================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Title and meta description
+================================================== -->
+  
+
+<title>UI components | U.S. Web Design Standards</title>
+<meta property="og:title" content="UI components | U.S. Web Design Standards">
+
+
+<meta name="description" content="">
+<meta property="og:description" content="">
+
+
+
+
+
+
+
+
+  
+  <link rel="canonical" href="https://standards.usa.gov/components/">
+  
+
+<!--[if lt IE 9]>
+  <script src="/assets/js/vendor/html5shiv.js"></script>
+<![endif]-->
+
+<!-- Favicons
+================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/ico" href="https://standards.usa.gov/assets/img/favicons/favicon.ico">
+  <link rel="icon" type="image/png" href="https://standards.usa.gov/assets/img/favicons/favicon.png">
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <link rel="icon" type="image/png" sizes="192x192" href="https://standards.usa.gov/assets/img/favicons/favicon-192.png">
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <link rel="apple-touch-icon-precomposed" href="https://standards.usa.gov/assets/img/favicons/favicon-57.png">
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://standards.usa.gov/assets/img/favicons/favicon-72.png">
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://standards.usa.gov/assets/img/favicons/favicon-114.png">
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://standards.usa.gov/assets/img/favicons/favicon-144.png">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="https://standards.usa.gov/css/styleguide.css">
+
+  </head>
+  <body class="page-ui-components layout-styleguide">
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+<header class="usa-header site-header" role="banner">
+  <!-- Gov banner BEGIN -->
+<div class="usa-banner">
+  <div class="usa-accordion">
+    <header class="usa-banner-header">
+      <div class="usa-grid usa-banner-inner">
+      <img src="https://standards.usa.gov/assets/img/favicons/favicon-57.png" alt="U.S. flag">
+      <p>An official website of the United States government</p>
+      <button class="usa-accordion-button usa-banner-button"
+        aria-expanded="false" aria-controls="gov-banner">
+        <span class="usa-banner-button-text">Here’s how you know</span>
+      </button>
+      </div>
+    </header>
+    <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner">
+      <div class="usa-banner-guidance-gov usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/assets/img/icon-dot-gov.svg" alt="Dot gov">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The .gov means it’s official.</strong>
+            <br>
+            Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you’re on a .gov or .mil site by inspecting your browser’s address (or “location”) bar.
+          </p>
+        </div>
+      </div>
+      <div class="usa-banner-guidance-ssl usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="https://standards.usa.gov/assets/img/icon-https.svg" alt="SSL">
+        <div class="usa-media_block-body">
+          <p>This site is also protected by an SSL (Secure Sockets Layer) certificate that’s been signed by the U.S. government. The <strong>https://</strong> means all transmitted data is encrypted  — in other words, any information or browsing history that you provide is transmitted securely.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Gov banner END -->
+
+
+  <div class="usa-navbar site-header-navbar">
+    <button class="usa-menu-btn">Menu</button>
+    <div class="usa-logo site-logo" id="logo">
+      <em class="usa-logo-text">
+        <a href="/" title="Home" aria-label="Home">
+          U.S. Web Design Standards
+        </a>
+      </em>
+    </div>
+    <ul class="usa-button-list usa-unstyled-list">
+  <li>
+    <a class="usa-button" href="/getting-started/download/" onclick="ga('send', 'event', 'Downloaded code and design files', 'Clicked Download code and design files from inside site');">
+      Download code and design files
+    </a>
+  </li>
+  <li>
+    <a class="usa-button usa-button-outline-inverse" href="https://github.com/18F/web-design-standards" onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');">
+      View on GitHub
+    </a>
+  </li>
+</ul>
+
+  </div>
+</header>  
+<nav class="site-nav-secondary sticky">
+  <ul>
+    
+  
+  <li>
+    
+      
+
+<a href="/components/" class="usa-current">UI components</a>
+
+  
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/page-templates/">Page templates</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/getting-started/">Getting started</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/design-principles/">Design principles</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/whats-new/">What’s new</a>
+
+
+    
+  </li>
+
+
+  </ul>
+</nav>
+<div class="usa-overlay"></div>
+
+<nav role="navigation" class="usa-nav sidenav-mobile">
+  <div class="usa-nav-inner">
+    <button class="usa-nav-close">
+      <img src="https://standards.usa.gov/assets/img/close.svg" alt="close">
+    </button>
+    <ul class="usa-sidenav-list usa-accordion">
+      
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-ui-components"
+  
+  class="usa-current"
+  aria-expanded="true"
+  >
+  UI components
+</button>
+<ul id="nav-ui-components" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/components/" class="usa-current">UI components</a>
+
+  
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/typography/">Typography</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/colors/">Colors</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/accessibility/">Accessibility</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/grids/">Grids</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/buttons/">Buttons</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/labels/">Labels</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/tables/">Tables</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/alerts/">Alerts</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/accordions/">Accordions</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/form-controls/">Form controls</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/form-templates/">Form templates</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/search-bar/">Search bar</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/sidenav/">Side navigation</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/headers/">Headers</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/footers/">Footers</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/page-templates/">Page templates</a>
+
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-getting-started"
+  
+  aria-expanded="false"
+  >
+  Getting started
+</button>
+<ul id="nav-getting-started" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/getting-started/">Getting started</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/getting-started/developers/">For developers</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/getting-started/designers/">For designers</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/performance/">Performance guidelines</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/getting-started/code-guidelines/">Code guidelines</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/getting-started/video-tutorials/">Video tutorials</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/getting-started/implementations/">Implementations</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/getting-started/showcase/">Showcase</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<a href="/design-principles/">Design principles</a>
+
+
+  
+  </li>
+
+  <li>
+  
+  
+    
+
+<button class="usa-accordion-button" aria-controls="nav-what-s-new"
+  
+  aria-expanded="false"
+  >
+  What’s new
+</button>
+<ul id="nav-what-s-new" class="usa-sidenav-sub_list">
+  
+  
+  
+  <li>
+    
+      
+
+<a href="/whats-new/">What’s new</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/whats-new/releases/">Release notes</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/whats-new/updates/">News and updates</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/whats-new/product-roadmap/">Product roadmap</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/whats-new/research/">Research</a>
+
+
+    
+  </li>
+
+
+</ul>
+
+  
+  </li>
+
+
+    </ul>
+    <ul class="usa-button-list usa-unstyled-list">
+  <li>
+    <a class="usa-button" href="/getting-started/download/" onclick="ga('send', 'event', 'Downloaded code and design files', 'Clicked Download code and design files from inside site');">
+      Download code and design files
+    </a>
+  </li>
+  <li>
+    <a class="usa-button usa-button-outline-inverse" href="https://github.com/18F/web-design-standards" onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');">
+      View on GitHub
+    </a>
+  </li>
+</ul>
+
+  </div>
+</nav>
+
+
+<aside class="sidenav sticky">
+  
+  
+  <ul class="usa-sidenav-list">
+    
+  
+  <li>
+    
+      
+
+<a href="/components/" class="usa-current">UI components</a>
+
+  
+    
+    
+    
+    
+    
+  
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/typography/">Typography</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/colors/">Colors</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/accessibility/">Accessibility</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/grids/">Grids</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/buttons/">Buttons</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/labels/">Labels</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/tables/">Tables</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/alerts/">Alerts</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/accordions/">Accordions</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/form-controls/">Form controls</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/form-templates/">Form templates</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/search-bar/">Search bar</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/sidenav/">Side navigation</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/headers/">Headers</a>
+
+
+    
+  </li>
+
+  
+  <li>
+    
+      
+
+<a href="/components/footers/">Footers</a>
+
+
+    
+  </li>
+
+
+  </ul>
+  
+</aside>
+
+<main id="main-content" class="main-content">
+
+  <div class="styleguide-content usa-content">
+    <header>
+      
+        
+      
+      <h1 id="ui-components">UI components</h1>
+    </header>
+
+    
+<p class="usa-font-lead">Our system of UI components are designed to set a new bar for simplicity and consistency across government services, while providing you with plug-and-play design and code.</p>
+
+
+
+
+    For getting up and running with the Standards, head over to our <a href="/getting-started/">Getting started</a> page for more information.
+
+  </div>
+
+</main>
+
+
+<footer class="usa-footer usa-footer-medium site" role="contentinfo">
+  <div class="usa-grid usa-footer-return-to-top">
+    <a href="#">Return to top</a>
+  </div>
+  <div class="usa-footer-primary-section">
+    <div class="usa-grid">
+      <nav class="usa-footer-nav">
+        <ul class="usa-unstyled-list">
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="/components/">UI components</a>
+          </li>
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="/page-templates/">Page templates</a>
+          </li>
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="/getting-started/">Getting started</a>
+          </li>
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="/design-principles/">Design principles</a>
+          </li>
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="/whats-new">What’s new</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="usa-footer-secondary_section">
+    <div class="usa-grid">
+      <div class="usa-width-two-thirds usa-content">
+        <h3>Become a part of the community</h3>
+        <p>The U.S. Web Design Standards has grown into a blossoming community of government engineers, content specialists, and designers. This open source project supports dozens of agencies and more than 100 sites, and is supported by an active community of contributors both in and out of government. This project is maintained by <a href="https://18f.gsa.gov/">18F</a>, an office within GSA.</p>
+        <p>We’re from the government, and we’re here to help.</p>
+        <div class="logo-links">
+          <a href="https://18f.gsa.gov/">
+            <img src="https://standards.usa.gov/img/logo-18f.png" alt="18F">
+          </a>
+          <a href="http://www.gsa.gov/">
+            <img src="https://standards.usa.gov/img/logo-gsa.png" alt="GSA">
+          </a>
+        </div>
+      </div>
+      <div class="usa-footer-contact-links usa-width-one-third">
+        <h5>Find an issue or have a feature request?</h5>
+        <a href="https://github.com/18F/web-design-standards/issues/new" class="usa-button cta">
+          <img src="https://standards.usa.gov/img/logo-github.png" alt="GitHub logo">
+          Ask questions on GitHub
+        </a>
+        <h5>Need help troubleshooting?</h5>
+        <a href="https://chat.18f.gov/" class="usa-button cta">
+          <img src="https://standards.usa.gov/img/logo-slack.png" alt="Slack logo">
+          Join our Slack Channel
+        </a>
+        <h5>Want to hire or contact us?</h5>
+        <a href="mailto:uswebdesignstandards@gsa.gov" class="usa-button cta">
+          <img src="https://standards.usa.gov/img/logo-email.png" alt="Email logo">
+          Send us an email
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!--[if lt IE 9]>
+  <script src="/assets/js/vendor/selectivizr-min.js"></script>
+  <script src="/assets/js/vendor/respond.js"></script>
+  <script src="/assets/js/vendor/rem.min.js"></script>
+<![endif]-->
+
+
+
+<script src="https://standards.usa.gov/assets/js/styleguide.js"></script>
+
+<script src="https://standards.usa.gov/assets/js/vendor/uswds.min.js"></script>
+
+  </body>
+</html>
