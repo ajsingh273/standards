@@ -619,10 +619,7 @@
     </header>
 
     
-<p class="usa-font-lead">Alerts keep users informed of important and sometimes time-sensitive changes.</p>
-
-
-
+<p class="usa-font-lead">Alerts give users immediate information relating to a process they are working through. Alerts may be errors, success, or information.</p>
 
     <div class="preview ">
   <div class="usa-alert usa-alert-success">
@@ -712,6 +709,8 @@
     Documentation
   </button>
   <div id="alert-docs" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Which to Use</h4>
+    <p>Banners are generally used in multistage systems, such as forms, to denote an error or success. In general, we use banners because they are less intrusive. If for any reason a user needs to be forced to read an alert (eg: the action would have permanent consequence) a popover which must be dismissed should be used, as the pattern is more intrusive and requires confirmation.</p>
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>Use the ARIA <code>role=<wbr>"alert"</code> to inform assistive technologies of a time-sensitive and important message that is not interactive. If the message is interactive, use the <code>alertdialog</code> role instead.</li>
