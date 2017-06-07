@@ -612,17 +612,48 @@
     <header>
       
         
+      <p class="site-subheading">UI components</p>
+        
       
-      <h1 id="ui-components">UI components</h1>
+      <h1 id="accessibility">Accessibility</h1>
     </header>
 
     
-<p class="usa-font-lead">Our system of UI components are designed to set a new bar for simplicity and consistency across government services, while providing you with plug-and-play design and code.</p>
+<p class="usa-font-lead">Accessibility tips to help you deliver delightful experiences to all users.</p>
 
 
 
 
-    For getting up and running with the Standards, head over to our <a href="/getting-started/">Getting started</a> page for more information.
+    <h2 id="hiding-and-showing-content">Hiding and showing content</h2>
+
+<p>There will be cases in which you will need to selectively &ldquo;show&rdquo; and &ldquo;hide&rdquo;
+content by either removing it from the visual flow or preventing screen
+readers from reading it. We have settled on the following conventions for each
+use case:</p>
+
+<table><thead>
+<tr>
+<th style="text-align: left">Visual<br>browsers</th>
+<th style="text-align: left">Screen<br>readers</th>
+<th style="text-align: left">Solution</th>
+</tr>
+</thead><tbody>
+<tr>
+<td style="text-align: left"><em>hide</em></td>
+<td style="text-align: left"><em>hide</em></td>
+<td style="text-align: left">Add the boolean <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden"><code>hidden</code> attribute</a> attribute to dynamically hide content from all users. <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttribute">Remove the attribute</a> to show it again.</td>
+</tr>
+<tr>
+<td style="text-align: left"><strong>show</strong></td>
+<td style="text-align: left"><em>hide</em></td>
+<td style="text-align: left">Use the <a href="https://www.w3.org/TR/wai-aria/states_and_properties#aria-hidden"><code>aria-hidden=&quot;true&quot;</code></a> attribute to &ldquo;hide&rdquo; content from screen readers while keeping it visually perceivable.</td>
+</tr>
+<tr>
+<td style="text-align: left"><em>hide</em></td>
+<td style="text-align: left"><strong>show</strong></td>
+<td style="text-align: left">Use the <code>usa-sr-only</code> class to show content to screen readers only. This removes the content from the visual flow of the document but retains its legibility by screen readers.</td>
+</tr>
+</tbody></table>
 
   </div>
 
